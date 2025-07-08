@@ -20,7 +20,7 @@ from sklearn.manifold import TSNE
 
 tsne = TSNE()
 
-show_df = pd.concat([df, df2], ignore_index=True) # 两部分数据抽前1w条来可视化
+show_df = pd.concat([df, df2], ignore_index=True)
 show_emb = np.concatenate([vector1, vector2])
 X_embedded = tsne.fit_transform(show_emb)
 import seaborn as sns
